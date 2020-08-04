@@ -1,8 +1,7 @@
-var _ = require('lodash');
-var hs = require('hubspot');
+var colors = require('colors');
 
 exports.handler = function(event, context, callback) {
-    console.log(hs);
+    console.log(colors);
 		var thing = event.queryStringParameters.name;
     callback(null, {
     statusCode: 200,
